@@ -1,0 +1,27 @@
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.pdb
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.pdb
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.pdb
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csprojAssemblyReference.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csproj.CoreCompileInputs.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.pdb
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.pdb
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.pdb
+C:\Users\Admin\Desktop\MATERIAŁY AGH\II ROK\I SEMESTR\Programowanie obiektowe\projekt\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csprojResolveAssemblyReference.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csprojResolveAssemblyReference.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML

@@ -1,0 +1,20 @@
+﻿<Window x:Class="RezerwacjeGUI.NowaRezerwacjaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RezerwacjeGUI"
+        mc:Ignorable="d"
+        Title="Nowa Rezerwacja" Height="399.442" Width="500.134">
+    <Grid>
+        <Button x:Name="button_Zatwierdz" Content="OK" HorizontalAlignment="Left" Height="35" Margin="230,323,0,0" VerticalAlignment="Top" Width="103" Click="button_Zatwierdz_Click" FontSize="16"/>
+        <ListBox x:Name="listBox_Najemcy" HorizontalAlignment="Left" Height="311" Margin="33,47,0,0" VerticalAlignment="Top" Width="161"/>
+        <Calendar x:Name="kalendarz" HorizontalAlignment="Left" Height="176" Margin="208,26,0,0" VerticalAlignment="Top" Width="245" SelectedDate="2019-01-01"/>
+        <Label x:Name="label" Content="Godz. początkowa" HorizontalAlignment="Left" Height="29" Margin="208,226,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="label1" Content="Osoba wynajmująca" HorizontalAlignment="Left" Height="29" Margin="33,13,0,0" VerticalAlignment="Top" Width="156"/>
+        <Label x:Name="label2" Content="Godz. końcowa" HorizontalAlignment="Left" Height="32" Margin="208,274,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="textBox_godzP" HorizontalAlignment="Left" Height="29" Margin="348,226,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="53"/>
+        <TextBox x:Name="textBox_godzK" HorizontalAlignment="Left" Height="28" Margin="348,274,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="53"/>
+
+    </Grid>
+</Window>

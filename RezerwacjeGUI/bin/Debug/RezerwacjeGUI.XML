@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RezerwacjeGUI</name>
+    </assembly>
+    <members>
+        <member name="T:RezerwacjeGUI.NowaRezerwacjaWindow">
+            <summary>
+            Logika interakcji dla NowaRezerwacjaWindow.xaml
+            </summary>
+            <summary>
+            NowaRezerwacjaWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.NowaRezerwacjaWindow.zbior">
+            Deklaracja pól: obiekt klasy Zbior, Rezerwacja, lista będąca xaml'owym odpowiednikiem kolekcji typu  Lista a także flaga logiczna *
+        </member>
+        <member name="M:RezerwacjeGUI.NowaRezerwacjaWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.NowaRezerwacjaWindow.#ctor(RezerwacjaSal.Rezerwacja,RezerwacjaSal.Zbior)">
+            <summary>
+            Konstruktor pobierający obiekt klasy Rezerwacja oraz Zbior. Następuje w nim przypisanie listy najemców do listBoxa
+            </summary>
+            <param name="rezerwacja"></param>
+            <param name="zbior"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NowaRezerwacjaWindow.button_Zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_Zatwierdz, pozwalającego na dodanie rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NowaRezerwacjaWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.RezerwacjaWindow">
+            <summary>
+            Logika interakcji dla RezerwacjaWindow.xaml
+            </summary>
+            
+            <summary>
+            RezerwacjaWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.RezerwacjaWindow.zbior">
+            Deklaracja pól: obiekt klasy Zbior, listy będące xaml'owym odpowiednikiem kolekcji typu  List, a także liczniki: i, j*
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.#ctor">
+            <summary>
+            Pusty konstruktor 
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.#ctor(RezerwacjaSal.Zbior)">
+            <summary>
+            Konstruktor wymagający podania konkretnego zbioru z okna głównego
+            </summary>
+            <param name="zbior"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.listBox_Budynki_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Obsługa wyboru nazwy budynku wchodzącej w skład listBox_Budynki. W listBox_Sale zostaną wyświetlone sale wchodzące w skład tego budynku 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.listBox_Sale_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Obsługa wyboru nazwy sali wchodzącej w sład listBox_Sale. W listBox_Rezerwacje zostaną wyświetlone rezerwacje danej sali
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.button_usun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_usun, pozwalającego na usunięcie aktualnie wybranej rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.button_dodajR_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_dodajR, pozwalającego na dodanie rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.button_szukaj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_szukaj, pozwalającego na wyszukiwanie rezerwacji w podanym przez użytkownika przedziale czasowym
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.RezerwacjaWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.SalaWindow">
+            <summary>
+            Logika interakcji dla SalaWindow.xaml
+            </summary>
+            <summary>
+            SalaWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.SalaWindow.sala">
+            Deklaracja pól: obiekt klasy Sala, a także flaga, sprawdzająca czy proces tworzenia sali został w pełni przeprowadzony *
+        </member>
+        <member name="M:RezerwacjeGUI.SalaWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.SalaWindow.#ctor(RezerwacjaSal.Sala)">
+            <summary>
+            Konstruktor wymagający podania obiektu klasy Sala
+            </summary>
+            <param name="sala"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.SalaWindow.button_zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_zatwierdz, którego wciśnięcie powoduje zakończenie procesu tworzenia sali
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.SalaWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.SzukajWindow">
+            <summary>
+            Logika interakcji dla SzukajWindow.xaml
+            </summary>
+            <summary>
+            SzukajWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.SzukajWindow.sala">
+            Deklaracja pól: obiekt klasy Sala, zmienne typu string, a takżelista będąca xaml'owym odpowiednikiem kolekcji typu  Lista *
+        </member>
+        <member name="M:RezerwacjeGUI.SzukajWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.SzukajWindow.#ctor(RezerwacjaSal.Sala)">
+            <summary>
+            Konstruktor pobierający obiekt klasy Sala, w którym następuje utworzenie pustej listy z wynikami wyszukiwania rezerwacji
+            </summary>
+            <param name="sala"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.SzukajWindow.button_powrot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_powrot, który powoduje zamknięcie okna
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.SzukajWindow.button_zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_zatwierdz, powodującego wyszukanie rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.SzukajWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.UsunRezerwacjeWindow">
+            <summary>
+            Logika interakcji dla UsunRezerwacjeWindow.xaml
+            </summary>
+            <summary>
+            UsunRezerwacjeWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.UsunRezerwacjeWindow.rezerwacja">
+            Deklaracja pól: obiekt klasy rezerwacja, flaga logiczna, zmienna typu string *
+        </member>
+        <member name="M:RezerwacjeGUI.UsunRezerwacjeWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.UsunRezerwacjeWindow.#ctor(RezerwacjaSal.Rezerwacja)">
+            <summary>
+            Konstruktor pobierający obiekt klasy Rezerwacja
+            </summary>
+            <param name="rezerwacja"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.UsunRezerwacjeWindow.button_zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_zatwierdz, inicjującego kończenie procesu usuwania rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.UsunRezerwacjeWindow.button_anuluj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_anuluj pozwalającego na wyjście z okna i anulowanie procesu usuwania rezerwacji
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.UsunRezerwacjeWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.WynikiWindow">
+            <summary>
+            Logika interakcji dla WynikiWindow.xaml
+            </summary>
+            <summary>
+            WynikiWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.WynikiWindow.lista">
+            Deklaracja pól: lista będąca xaml'owym odpowiednikiem kolekcji typu  Lista *
+        </member>
+        <member name="M:RezerwacjeGUI.WynikiWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.WynikiWindow.#ctor(System.Collections.Generic.List{RezerwacjaSal.Rezerwacja})">
+            <summary>
+            Konstruktor pobierający Listę generyczną z Rezerwacjami, następuje w nim przypisanie do listBoxa danych z otrzymanej listy
+            </summary>
+            <param name="lista"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.WynikiWindow.button_powrot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_powrot, umożliwiającego zamknięcie okna
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.WynikiWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.BudynekWindow">
+            <summary>
+            Logika interakcji dla BudynekWindow.xaml
+            </summary>
+            <summary>
+            BudynekWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.BudynekWindow.zbior">
+            Deklaracja pól: obiekt klasy Zbior, lista będąca xaml'owym odpowiednikiem kolekcji typu  Lista, a także licznik i *
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.#ctor">
+            <summary>
+            Pusty konstruktor 
+            </summary>
+            <param name="zbior"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.#ctor(RezerwacjaSal.Zbior)">
+            <summary>
+             Główny konstruktor, w którym zostają przypisane wartości dla wyświatlanych kontrolek WPF (Labeli, TextBoxów,ListBoxa)
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.button_nastepny_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku "Następny" pozwalającego na przeglądanie budynków
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.button_dodajBudynek_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_dodajBudynek, pozwalającego na dodawanie nowego budynku
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.button_edytuj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_edytuj, pozwalającego na edycję aktualnie wyświetlanego budynku
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.button_dodajSale_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_dodajSale, pozwalajacego na dodanie sali do aktualnie wyświetlanego budynku
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.button_usunSale_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_usunSale, który pozwala na usunięcie zaznaczonej sali
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.BudynekWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.EdycjaBudynkuWindow">
+            <summary>
+            Logika interakcji dla EdycjaBudynkuWindow.xaml
+            </summary>
+            <summary>
+            EdycjaBudynkuWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.EdycjaBudynkuWindow.flaga">
+            Deklaracja pól: obiekt klasy Budynek, a także flaga, sprawdzająca czy proces tworzenia/edycji budynku został w pełni przeprowadzony *
+        </member>
+        <member name="M:RezerwacjeGUI.EdycjaBudynkuWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.EdycjaBudynkuWindow.#ctor(RezerwacjaSal.Budynek)">
+            <summary>
+            Konstruktor wymagajacy podania obiektu klasy Budynek
+            </summary>
+            <param name="budynek"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.EdycjaBudynkuWindow.button_zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_zatwierdz, którego wciśnięcie powoduje zakończenie procesu tworzenia budynku
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.EdycjaBudynkuWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.MainWindow">
+            <summary>
+            Logika intereakcji dla MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.MainWindow.zbior">
+            Deklaracja pól: obiekt klasy Zbior, listatmp będąca xaml'owym odpowiednikiem kolekcji typu  Lista, która weźmie udział w kopiowaniu aktualnych rezerwacji *
+        </member>
+        <member name="M:RezerwacjeGUI.MainWindow.#ctor">
+            <summary>
+            Pusty konstruktor w którym program wczyta dane z pliku XML
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.MainWindow.button_Budynki_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Deklaracja tego, co wydarzy się po kliknięciu przycisku button_Budynki 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.MainWindow.button_Najemcy_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Deklaracja tego, co wydarzy się po kliknięciu przycisku button_Najemcy
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.MainWindow.button_Rezerwacje_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Deklaracja tego, co wydarzy się po kliknięciu przycisku button_Rezerwacje
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.NajemcyWindow">
+            <summary>
+            Logika interakcji dla NajemcyWindow.xaml
+            </summary>
+            
+            <summary>
+            NajemcyWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.NajemcyWindow.zbior">
+            Deklaracja pól: obiekt klasy Zbior, lista będąca xaml'owym odpowiednikiem kolekcji typu  Lista *
+        </member>
+        <member name="M:RezerwacjeGUI.NajemcyWindow.#ctor">
+            <summary>
+            Pusty konstruktor, w którym zostają przypisane wartości dla wyświatlanych kontrolek WPF (Labeli, TextBoxów,ListBoxa)
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.NajemcyWindow.#ctor(RezerwacjaSal.Zbior)">
+            <summary>
+            Główny Konstruktor wymagający podania zbioru z okna głównego
+            </summary>
+            <param name="zbior"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NajemcyWindow.button_dodaj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_dodaj, pozwalającego na dodanie najemcy
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NajemcyWindow.button_usun_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_usun, pozwalającego na usunięcie zaznaczonego najemcy
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NajemcyWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.NowyNajemcaWindow">
+            <summary>
+            Logika interakcji dla NowyNajemcaWindow.xaml
+            </summary>
+            <summary>
+            NowyNajemcaWindow
+            </summary>
+        </member>
+        <member name="F:RezerwacjeGUI.NowyNajemcaWindow.flaga">
+            Deklaracja pól: obiekt klasy Najemca, a także flaga, sprawdzająca czy proces tworzenia najemcy został w pełni przeprowadzony *
+        </member>
+        <member name="M:RezerwacjeGUI.NowyNajemcaWindow.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjeGUI.NowyNajemcaWindow.#ctor(RezerwacjaSal.Najemca)">
+            <summary>
+            Konstruktor wymagający podania obiektu klasy Najemca
+            </summary>
+            <param name="najemca"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NowyNajemcaWindow.button_zatwierdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Obsługa przycisku button_zatwierdz, którego wciśnięcie powoduje zakończenie procesu tworzenia najemcy
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NowyNajemcaWindow.button_anuluj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Przycisk button_anuluj przerywa tworzenie najemcy i zamyka okno
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RezerwacjeGUI.NowyNajemcaWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RezerwacjeGUI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:RezerwacjeGUI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:RezerwacjeGUI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,115 @@
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe.config
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csprojResolveAssemblyReference.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\App.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.lref
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.g.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.Properties.Resources.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csproj.GenerateResource.Cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.xml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe.config
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.pdb
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.exe
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.pdb
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.xml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csprojAssemblyReference.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\App.g.cs
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.lref
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.baml
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.g.resources
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.Properties.Resources.resources
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csproj.GenerateResource.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csproj.CoreCompileInputs.cache
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csproj.CopyComplete
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.exe
+C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe.config
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjaSal.xml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csprojResolveAssemblyReference.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\App.g.cs
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI_MarkupCompile.lref
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\BudynekWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\EdycjaBudynkuWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\MainWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NajemcyWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowaRezerwacjaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\NowyNajemcaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SalaWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\SzukajWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\UsunRezerwacjeWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\WynikiWindow.baml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.g.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.Properties.Resources.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.csproj.GenerateResource.Cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.XML

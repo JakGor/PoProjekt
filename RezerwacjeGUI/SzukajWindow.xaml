@@ -1,0 +1,19 @@
+﻿<Window x:Class="RezerwacjeGUI.SzukajWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RezerwacjeGUI"
+        mc:Ignorable="d"
+        Title="Szukaj rezerwacji" Height="255.132" Width="476.471">
+    <Grid Margin="0,0,0,30">
+        <Button x:Name="button_zatwierdz" Content="OK" HorizontalAlignment="Left" Height="30" Margin="238,149,0,0" VerticalAlignment="Top" Width="91" Click="button_zatwierdz_Click"/>
+        <Calendar x:Name="kalendarz" HorizontalAlignment="Left" Height="178" Margin="30,21,0,0" VerticalAlignment="Top" Width="213" SelectedDate="2019-01-01"/>
+        <Label x:Name="label" Content="Od godziny" HorizontalAlignment="Left" Height="33" Margin="243,34,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="label1" Content="Do godziny" HorizontalAlignment="Left" Height="33" Margin="243,90,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="textBox_godzP" HorizontalAlignment="Left" Height="33" Margin="345,34,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="textBox_godzK" HorizontalAlignment="Left" Height="33" Margin="345,90,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="button_powrot" Content="Powrót" HorizontalAlignment="Left" Height="30" Margin="345,149,0,0" VerticalAlignment="Top" Width="91" Click="button_powrot_Click"/>
+
+    </Grid>
+</Window>

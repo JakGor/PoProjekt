@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Sala xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nazwa>1</Nazwa>
+  <Id>7</Id>
+  <Typ>aula</Typ>
+  <Pojemność>1</Pojemność>
+  <ListaRezerwacji />
+  <LiczbaRezerwacji>0</LiczbaRezerwacji>
+</Sala>

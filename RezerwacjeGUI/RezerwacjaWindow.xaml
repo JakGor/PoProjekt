@@ -1,0 +1,27 @@
+﻿<Window x:Class="RezerwacjeGUI.RezerwacjaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RezerwacjeGUI"
+        mc:Ignorable="d"
+        Title="Rezerwacje" Height="621.849" Width="950.867">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="248*"/>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listBox_Budynki" HorizontalAlignment="Left" Height="462" Margin="10,60,0,0" VerticalAlignment="Top" Width="139" SelectionChanged="listBox_Budynki_SelectionChanged"/>
+        <Label x:Name="label" Content="Budynki" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" VerticalAlignment="Top" Width="158" FontSize="18"/>
+        <Label x:Name="label1" Content="Sale" HorizontalAlignment="Left" Height="39" Margin="190,10,0,0" VerticalAlignment="Top" Width="166" FontSize="18"/>
+        <ListBox x:Name="listBox_Sale" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="462" Margin="190,60,0,0" VerticalAlignment="Top" Width="224" SelectionChanged="listBox_Sale_SelectionChanged"/>
+        <ListBox x:Name="listBox_Rezerwacje" Grid.Column="1" HorizontalAlignment="Left" Height="462" Margin="70,60,0,0" VerticalAlignment="Top" Width="224"/>
+        <Label x:Name="label2" Content="Rezerwacje" Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="70,10,0,0" VerticalAlignment="Top" Width="205" FontSize="18"/>
+        <Button x:Name="button_dodajR" Content="Dodaj rezerwację" Grid.Column="2" HorizontalAlignment="Left" Height="46" Margin="40,60,0,0" VerticalAlignment="Top" Width="116" Click="button_dodajR_Click"/>
+        <Button x:Name="button_usun" Content="Usuń rezerwację" Grid.Column="2" HorizontalAlignment="Left" Height="46" Margin="40,133,0,0" VerticalAlignment="Top" Width="116" Click="button_usun_Click"/>
+        <Button x:Name="button_szukaj" Content="Wyszukaj rezerwację" Grid.Column="2" HorizontalAlignment="Left" Height="46" Margin="40,208,0,0" VerticalAlignment="Top" Width="116" Click="button_szukaj_Click"/>
+        <Image x:Name="_23a9gvj9_bmp" Margin="0,270,16,69" Source="23a9gvj9.bmp" Stretch="Fill" Grid.Column="2"/>
+
+    </Grid>
+</Window>

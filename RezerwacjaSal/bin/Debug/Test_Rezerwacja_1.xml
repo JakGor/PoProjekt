@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Rezerwacja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Numer>1</Numer>
+  <Najem Id="98080404212">
+    <Imię>ADRIAN</Imię>
+    <Płeć>M</Płeć>
+    <Nazwisko>GZYL</Nazwisko>
+  </Najem>
+  <Dzień>0001-01-01T00:00:00</Dzień>
+  <Godz_pocz_serializacja>684000000000</Godz_pocz_serializacja>
+  <Godzina_końcowa_serializacja>702000000000</Godzina_końcowa_serializacja>
+</Rezerwacja>

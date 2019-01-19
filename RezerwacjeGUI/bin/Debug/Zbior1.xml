@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<Zbior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpisBudynkow>
+    <Budynek Id="D-14">
+      <ListaSal>
+        <Sala>
+          <Nazwa>1.2</Nazwa>
+          <Id>1</Id>
+          <Typ>aula</Typ>
+          <Pojemność>50</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>1.3</Nazwa>
+          <Id>2</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>50</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>18</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-30T00:00:00</Dzień>
+              <Godz_pocz_serializacja>468000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>504000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>3.1</Nazwa>
+          <Id>1</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>13</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>14</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-30T00:00:00</Dzień>
+              <Godz_pocz_serializacja>720000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>792000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>307</Nazwa>
+          <Id>2</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>40</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>A 0.3</Nazwa>
+          <Id>1</Id>
+          <Typ>aula</Typ>
+          <Pojemność>105</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>16</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-24T00:00:00</Dzień>
+              <Godz_pocz_serializacja>468000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>504000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>true</Gastronomia>
+      <Wifi>true</Wifi>
+    </Budynek>
+    <Budynek Id="D-13">
+      <ListaSal>
+        <Sala>
+          <Nazwa>102</Nazwa>
+          <Id>3</Id>
+          <Typ>aula</Typ>
+          <Pojemność>150</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>224</Nazwa>
+          <Id>1</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>55</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>412</Nazwa>
+          <Id>4</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>30</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>false</Gastronomia>
+      <Wifi>false</Wifi>
+    </Budynek>
+    <Budynek Id="A-1">
+      <ListaSal>
+        <Sala>
+          <Nazwa>Aula JSW</Nazwa>
+          <Id>1</Id>
+          <Typ>aula</Typ>
+          <Pojemność>200</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>17</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-30T00:00:00</Dzień>
+              <Godz_pocz_serializacja>432000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>468000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>Aula KGHM</Nazwa>
+          <Id>2</Id>
+          <Typ>aula</Typ>
+          <Pojemność>250</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>9</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-29T00:00:00</Dzień>
+              <Godz_pocz_serializacja>468000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>720000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>Sala Odlewnicza</Nazwa>
+          <Id>2</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>20</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>10</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-01-19T00:00:00</Dzień>
+              <Godz_pocz_serializacja>432000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>468000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>false</Winda>
+      <Gastronomia>false</Gastronomia>
+      <Wifi>false</Wifi>
+    </Budynek>
+    <Budynek Id="A-0">
+      <ListaSal>
+        <Sala>
+          <Nazwa>Aula AGH</Nazwa>
+          <Id>1</Id>
+          <Typ>aula</Typ>
+          <Pojemność>115</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>11</Numer>
+              <Najem Id="98052408891">
+                <Imię>JAKUB</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GÓROWSKI</Nazwisko>
+              </Najem>
+              <Dzień>2019-02-01T00:00:00</Dzień>
+              <Godz_pocz_serializacja>540000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>576000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>Sala1</Nazwa>
+          <Id>1</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>140</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>Sala2</Nazwa>
+          <Id>2</Id>
+          <Typ>aula</Typ>
+          <Pojemność>30</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>true</Gastronomia>
+      <Wifi>true</Wifi>
+    </Budynek>
+    <Budynek Id="CE AGH">
+      <ListaSal>
+        <Sala>
+          <Nazwa>Lab fotowoltaiczny</Nazwa>
+          <Id>4</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>5</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>Sala Cieplna</Nazwa>
+          <Id>2</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>35</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>x</Nazwa>
+          <Id>1</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>25</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>false</Gastronomia>
+      <Wifi>false</Wifi>
+    </Budynek>
+  </SpisBudynkow>
+  <ListaNajemcow>
+    <Najemca Id="98080404212">
+      <Imię>ADRIAN</Imię>
+      <Płeć>M</Płeć>
+      <Nazwisko>GZYL</Nazwisko>
+    </Najemca>
+    <Najemca Id="98052408891">
+      <Imię>JAKUB</Imię>
+      <Płeć>M</Płeć>
+      <Nazwisko>GÓROWSKI</Nazwisko>
+    </Najemca>
+    <Najemca Id="92071314764">
+      <Imię>AGNIESZKA</Imię>
+      <Płeć>K</Płeć>
+      <Nazwisko>NOWAK</Nazwisko>
+    </Najemca>
+  </ListaNajemcow>
+  <RezerwacjeRazem>0</RezerwacjeRazem>
+  <Numer>0</Numer>
+</Zbior>

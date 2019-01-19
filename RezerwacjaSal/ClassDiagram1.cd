@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RezerwacjaSal.Budynek">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAgAAIAgAEAAIAAAAAAAAAQAEAAACgAAAAoJA=</HashCode>
+      <FileName>Budynek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RezerwacjaSal.Dodatki">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dodatki.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RezerwacjaSal.KonstruktorException">
+    <Position X="10" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAIAAAAAA=</HashCode>
+      <FileName>KonstruktorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RezerwacjaSal.Najemca">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAEIAACACEAAgAAAAAAAAIQAEACIAAAAAAABA=</HashCode>
+      <FileName>Najemca.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RezerwacjaSal.Program">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RezerwacjaSal.Rezerwacja" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAQAQAgAAQMIAAoCAAAIQAAQAEAAAEAAAABABA=</HashCode>
+      <FileName>Rezerwacja.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RezerwacjaSal.Sala" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAAIAAQECAABCABIIAgASIGAAAAgIAAAIhA=</HashCode>
+      <FileName>Sala.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RezerwacjaSal.Zbior">
+    <Position X="14" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKACAAAAAAAAAAAEAAAAAgAAACQBQAEEAAFAAACBQAA=</HashCode>
+      <FileName>Zbior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="RezerwacjaSal.IRezerwowalny">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAICAAAAAAAAAAAA=</HashCode>
+      <FileName>IRezerwowalny.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="RezerwacjaSal.Płcie">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAA=</HashCode>
+      <FileName>Najemca.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RezerwacjaSal.Właściwość">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAA=</HashCode>
+      <FileName>Sala.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

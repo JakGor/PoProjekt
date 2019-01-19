@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.12.10.0" projectFile="C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Dokumentacja.shfbproj" started="19.01.2019 12:08:26">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.5&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2018.12.10.0
+Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\RezerwacjaSal.csproj
+    Found project &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\RezerwacjaSal.csproj&#39;
+Source: C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\RezerwacjeGUI.csproj
+    Found project &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\RezerwacjeGUI.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe&#39;
+    Found assembly &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.exe&#39;
+SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.5&#39; to &#39;.NET Framework 4.5.2&#39; for the build.
+
+References to include (excluding framework assemblies):
+    None
+
+Copying XML comments files
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\RezerwacjaSal.XML
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.XML -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\RezerwacjeGUI.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00,0010
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateRefInfo.proj]
+Build started 19.01.2019 12:08:27.
+Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 2 namespaces, 21 types, and 127 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.79
+    Last step completed in 00:00:00,9704
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - TransformManifest.proj]
+Build started 19.01.2019 12:08:28.
+Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.54
+    Last step completed in 00:00:02,6973
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00,1386
+</buildStep>
+<buildStep step="CopyConceptualContent">
+Copying conceptual content...
+Copying standard token shared content file...
+Checking for other token files...
+Checking for code snippets files...
+Copying images and creating the media map file...
+Generating conceptual topic files
+    Parsing topic file &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\Welcome.aml&#39;
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\Welcome.aml -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\ddueXml\6350f7a1-b573-4b7b-8387-14093d6f8c9a.xml
+    Parsing topic file &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\VersionHistory\VersionHistory.aml&#39;
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\ddueXml\236df7c2-88bc-45ee-8ee1-55496b648fd0.xml
+    Parsing topic file &#39;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\VersionHistory\v1.0.0.0.aml&#39;
+    C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\ddueXml\93426d8c-2f31-4f83-87f8-e80570d2493d.xml
+    Last step completed in 00:00:00,0451
+</buildStep>
+<buildStep step="CreateConceptualTopicConfigs">
+Creating conceptual topic configuration files...
+    Companion files
+    _ContentMetadata_.xml
+    Merging topic IDs into manifest.xml
+    Last step completed in 00:00:00,0110
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\icons\Help.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\Help.png
+    Last step completed in 00:00:00,0070
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00,0030
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 19.01.2019 12:08:31.
+Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.20
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00,3650
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00,2381
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\sandcastle.config
+  Updating reference topic configurations.
+  Updating conceptual topic configurations.
+    Removing unused ExampleComponent.
+    Last step completed in 00:00:00,0060
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - BuildTopics.proj]
+Build started 19.01.2019 12:08:32.
+Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2018.12.10.0)
+  Copyright c 2006-2018, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2018, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  ResolveReferenceLinksComponent: The MSDN content ID cache &#39;C:\Users\jakub\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MsdnContentId.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;winda&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;gastronomia&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean)] Missing &lt;param name=&quot;wifi&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.Clone] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.DodajSale(RezerwacjaSal.Sala)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.DodajSale(RezerwacjaSal.Sala)] Missing &lt;param name=&quot;s&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Budynek.Gastronomia] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Budynek.ListaSal] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Budynek.Nazwa] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.OdczytajXml(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.OdczytajXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.ToString] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Budynek.Wifi] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Budynek.Winda] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Budynek.ZapiszXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Dodatki.Sprawd&#171;String(System.String,System.Char[])] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Dodatki.Sprawd&#171;String(System.String,System.Char[])] Missing &lt;param name=&quot;str&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Dodatki.Sprawd&#171;String(System.String,System.Char[])] Missing &lt;param name=&quot;arr&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.KonstruktorException.#ctor(System.String)] Missing &lt;param name=&quot;str&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.KonstruktorException.Message] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.KonstruktorException.Str] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.#ctor(System.String,System.String,System.String,RezerwacjaSal.Pcie)] Missing &lt;param name=&quot;imi&#169;&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.#ctor(System.String,System.String,System.String,RezerwacjaSal.Pcie)] Missing &lt;param name=&quot;nazwisko&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.#ctor(System.String,System.String,System.String,RezerwacjaSal.Pcie)] Missing &lt;param name=&quot;pesel&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.#ctor(System.String,System.String,System.String,RezerwacjaSal.Pcie)] Missing &lt;param name=&quot;pe†&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.Clone] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Najemca.Nazwisko] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.OdczytajXml(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.OdczytajXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Najemca.Pesel] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Najemca.Pe†] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.sprawdzPESEL(System.String)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.sprawdzPESEL(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.sprawdzPESEL(System.String)] Missing &lt;param name=&quot;PESEL&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.ToString] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Najemca.ZapiszXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:RezerwacjaSal.Pcie] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.#ctor(RezerwacjaSal.Najemca,System.String,System.String,System.String)] Missing &lt;param name=&quot;najemca&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.#ctor(RezerwacjaSal.Najemca,System.String,System.String,System.String)] Missing &lt;param name=&quot;dzie&#228;&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.#ctor(RezerwacjaSal.Najemca,System.String,System.String,System.String)] Missing &lt;param name=&quot;godzina_poczĄtkowa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.#ctor(RezerwacjaSal.Najemca,System.String,System.String,System.String)] Missing &lt;param name=&quot;godzina_ko&#228;cowa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.Clone] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.CompareTo(RezerwacjaSal.Rezerwacja)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.CompareTo(RezerwacjaSal.Rezerwacja)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Rezerwacja.Numer] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.OdczytajXml(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.OdczytajXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.ToString] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Rezerwacja.ZapiszXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.#ctor(System.String,RezerwacjaSal.Waciwo†,System.Int32)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.#ctor(System.String,RezerwacjaSal.Waciwo†,System.Int32)] Missing &lt;param name=&quot;typ&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.#ctor(System.String,RezerwacjaSal.Waciwo†,System.Int32)] Missing &lt;param name=&quot;pojemno†&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Clone] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.CompareTo(RezerwacjaSal.Sala)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.CompareTo(RezerwacjaSal.Sala)] Missing &lt;param name=&quot;s&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.DodajRezerwacj&#169;(RezerwacjaSal.Rezerwacja)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.DodajRezerwacj&#169;(RezerwacjaSal.Rezerwacja,System.Int32)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.DodajRezerwacj&#169;(RezerwacjaSal.Rezerwacja,System.Int32)] Missing &lt;param name=&quot;nr&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.Id] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.Kolejno†_sal] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.LiczbaRezerwacji] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.ListaRezerwacji] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.OdczytajXml(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.OdczytajXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.Pojemno†] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Sprawd&#171;Rezerwacj&#169;(RezerwacjaSal.Rezerwacja)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.ToString] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Sala.Typ] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Usu&#228;Rezerwacj&#169;(RezerwacjaSal.Rezerwacja,System.String)] Missing &lt;param name=&quot;r&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Usu&#228;Rezerwacj&#169;(RezerwacjaSal.Rezerwacja,System.String)] Missing &lt;param name=&quot;pesel&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.ZapiszXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.DateTime,System.String,System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;dzie&#228;&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;godzina_poczĄtkowa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.DateTime,System.String,System.String)] Missing &lt;param name=&quot;godzina_ko&#228;cowa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Sala.Znajd&#171;Rezerwacj&#169;(System.Int32)] Missing &lt;param name=&quot;numer&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:RezerwacjaSal.Waciwo†] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.DodajBudynek(RezerwacjaSal.Budynek)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.DodajBudynek(RezerwacjaSal.Budynek)] Missing &lt;param name=&quot;b&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.DodajNajemce(RezerwacjaSal.Najemca)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.DodajNajemce(RezerwacjaSal.Najemca)] Missing &lt;param name=&quot;n&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Zbior.ListaNajemcow] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Zbior.Numer] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.OdczytajXml(System.String)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.OdczytajXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Zbior.RezerwacjeRazem] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:RezerwacjaSal.Zbior.SpisBudynkow] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.ToString] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.ToString] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.UsunBudynek(RezerwacjaSal.Budynek)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.UsunBudynek(RezerwacjaSal.Budynek)] Missing &lt;param name=&quot;b&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.UsunNajemce(RezerwacjaSal.Najemca)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.UsunNajemce(RezerwacjaSal.Najemca)] Missing &lt;param name=&quot;n&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.WypiszSale(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.WypiszSale(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.WypiszSale(System.Int32)] Missing &lt;param name=&quot;i&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjaSal.Zbior.ZapiszXml(System.String)] Missing &lt;param name=&quot;nazwa&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.BudynekWindow.#ctor(RezerwacjaSal.Zbior)] Missing &lt;param name=&quot;zbior&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.EdycjaBudynkuWindow.#ctor(RezerwacjaSal.Budynek)] Missing &lt;param name=&quot;budynek&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.EdycjaBudynkuWindow.flaga] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.NajemcyWindow.#ctor(RezerwacjaSal.Zbior)] Missing &lt;param name=&quot;zbior&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.NowaRezerwacjaWindow.#ctor(RezerwacjaSal.Rezerwacja,RezerwacjaSal.Zbior)] Missing &lt;param name=&quot;rezerwacja&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.NowaRezerwacjaWindow.#ctor(RezerwacjaSal.Rezerwacja,RezerwacjaSal.Zbior)] Missing &lt;param name=&quot;zbior&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.NowaRezerwacjaWindow.flaga] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.NowyNajemcaWindow.#ctor(RezerwacjaSal.Najemca)] Missing &lt;param name=&quot;najemca&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.NowyNajemcaWindow.flaga] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.RezerwacjaWindow.#ctor(RezerwacjaSal.Zbior)] Missing &lt;param name=&quot;zbior&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.SalaWindow.#ctor(RezerwacjaSal.Sala)] Missing &lt;param name=&quot;sala&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.SalaWindow.flaga] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.SzukajWindow.#ctor(RezerwacjaSal.Sala)] Missing &lt;param name=&quot;sala&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.SzukajWindow.godzinaDO] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.SzukajWindow.godzinaOD] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.UsunRezerwacjeWindow.#ctor(RezerwacjaSal.Rezerwacja)] Missing &lt;param name=&quot;rezerwacja&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.UsunRezerwacjeWindow.flaga] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:RezerwacjeGUI.UsunRezerwacjeWindow.haslo] Missing &lt;summary&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:RezerwacjeGUI.WynikiWindow.#ctor(System.Collections.Generic.List{RezerwacjaSal.Rezerwacja})] Missing &lt;param name=&quot;lista&quot;/&gt; documentation [C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj]
+  Processed 222 topic(s)
+  118 warning(s)
+  CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
+  ResolveArtLinksComponent: Copying media files...
+  ResolveReferenceLinksComponent: 654 entries added to the MSDN content ID cache.  New cache size: 654 entries
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 5 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 6 of 30.
+Done Building Project &quot;C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\BuildTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:07:40.52
+    Last step completed in 00:07:40,7144
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00,0020
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2018.12.10.0
+Copyright c 2006-2018, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing Help 1 files in C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1
+Processed 222 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Dokumentacja.hhk
+Saving HTML Help 1 table of contents to C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Dokumentacja.hhc
+    Last step completed in 00:00:00,3630
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\styles\branding.css
+    Last step completed in 00:00:00,3291
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00,0010
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00,0000
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00,0040
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - Build1xHelpFile.proj]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\Dokumentacja.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 3 seconds
+  
+  224	Topics
+  
+  2,046	Local links
+  
+  27,392	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\Dokumentacja\Help\Working\Output\HtmlHelp1\Dokumentacja.chm, 901,688 bytes
+  
+  Compression decreased file by 6,424,327 bytes.
+  
+    Last step completed in 00:00:03,4578
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00,1066
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 19.01.2019 12:16:17.  Total time: 00:07:50,3030
+
+</buildStep>
+</shfbBuild>

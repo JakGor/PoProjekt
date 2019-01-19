@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Zbior xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpisBudynkow>
+    <Budynek Id="D-14">
+      <ListaSal>
+        <Sala>
+          <Nazwa>1.2</Nazwa>
+          <Id>5</Id>
+          <Typ>aula</Typ>
+          <Pojemność>50</Pojemność>
+          <ListaRezerwacji>
+            <Rezerwacja>
+              <Numer>1</Numer>
+              <Najem Id="98080404212">
+                <Imię>ADRIAN</Imię>
+                <Płeć>M</Płeć>
+                <Nazwisko>GZYL</Nazwisko>
+              </Najem>
+              <Dzień>0001-01-01T00:00:00</Dzień>
+              <Godz_pocz_serializacja>684000000000</Godz_pocz_serializacja>
+              <Godzina_końcowa_serializacja>702000000000</Godzina_końcowa_serializacja>
+            </Rezerwacja>
+          </ListaRezerwacji>
+          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>1.3</Nazwa>
+          <Id>6</Id>
+          <Typ>komputerowa</Typ>
+          <Pojemność>50</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>true</Gastronomia>
+      <Wifi>true</Wifi>
+    </Budynek>
+    <Budynek Id="D-13">
+      <ListaSal>
+        <Sala>
+          <Nazwa>102</Nazwa>
+          <Id>7</Id>
+          <Typ>aula</Typ>
+          <Pojemność>150</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+        <Sala>
+          <Nazwa>412</Nazwa>
+          <Id>8</Id>
+          <Typ>ćwiczeniowa</Typ>
+          <Pojemność>30</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>true</Gastronomia>
+      <Wifi>false</Wifi>
+    </Budynek>
+  </SpisBudynkow>
+  <ListaNajemcow>
+    <Najemca Id="98080404212">
+      <Imię>ADRIAN</Imię>
+      <Płeć>M</Płeć>
+      <Nazwisko>GZYL</Nazwisko>
+    </Najemca>
+    <Najemca Id="98052408891">
+      <Imię>JAKUB</Imię>
+      <Płeć>M</Płeć>
+      <Nazwisko>GÓROWSKI</Nazwisko>
+    </Najemca>
+  </ListaNajemcow>
+  <RezerwacjeRazem>0</RezerwacjeRazem>
+  <Numer>0</Numer>
+</Zbior>

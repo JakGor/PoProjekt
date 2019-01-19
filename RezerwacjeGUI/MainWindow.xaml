@@ -1,0 +1,23 @@
+﻿<Window x:Class="RezerwacjeGUI.MainWindow"
+            Icon="Ikona1.ico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RezerwacjeGUI"
+        mc:Ignorable="d"
+        Title="Menu główne" Height="350" Width="525" Closing="Window_Closing" FontSize="16">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Aplikacja do rezerwacji sal" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" FontSize="20"/>
+        <Button x:Name="button_Budynki" Content="BUDYNKI" HorizontalAlignment="Left" Height="43" Margin="10,55,0,0" VerticalAlignment="Top" Width="242" Click="button_Budynki_Click"/>
+        <Button x:Name="button_Najemcy" Content="NAJEMCY" HorizontalAlignment="Left" Height="44" Margin="10,122,0,0" VerticalAlignment="Top" Width="242" Click="button_Najemcy_Click"/>
+        <Button x:Name="button_Rezerwacje" HorizontalAlignment="Left" Height="44" Margin="10,188,0,0" VerticalAlignment="Top" Width="242" Click="button_Rezerwacje_Click">
+            <Label x:Name="label1" Content="REZERWACJE"/>
+        </Button>
+        <Button x:Name="button" Content="WYJDŹ" HorizontalAlignment="Left" Height="42" Margin="10,258,0,0" VerticalAlignment="Top" Width="242" Click="button_Click"/>
+        <Image x:Name="aveex_bandera_for_aluprof_Kolejne_budynki_w_USA_w_systemach_ALUPROF_Marriott_LIC_jpg" Margin="302,18,40,10" Source="aveex_bandera_for_aluprof_Kolejne_budynki_w_USA_w_systemach_ALUPROF_Marriott_LIC.jpg" Stretch="Fill"/>
+    </Grid>
+</Window>
