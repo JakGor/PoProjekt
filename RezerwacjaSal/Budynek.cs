@@ -19,6 +19,9 @@ namespace RezerwacjaSal
         private bool gastronomia;
         private bool wifi;
         /**********************************************************  Właściwości  **/
+        /// <summary>
+        /// Nazwa budynku
+        /// </summary>
         [XmlAttribute("Id")]
         public string Nazwa
         {
@@ -36,7 +39,9 @@ namespace RezerwacjaSal
                 nazwa = value;
             }
         }
-
+        /// <summary>
+        /// Lista sal w budynku
+        /// </summary>
         public List<Sala> ListaSal
         {
             get
@@ -49,7 +54,9 @@ namespace RezerwacjaSal
                 listaSal = value;
             }
         }
-
+        /// <summary>
+        /// Zmienna logiczna odpowiadająca na pytanie czy w budynku jest winda
+        /// </summary>
         public bool Winda
         {
             get
@@ -62,7 +69,9 @@ namespace RezerwacjaSal
                 winda = value;
             }
         }
-
+        /// <summary>
+        /// Zmienna logiczna odpowiadająca na pytanie czy w budynku jest zaplecze gastronomiczne
+        /// </summary>
         public bool Gastronomia
         {
             get
@@ -75,7 +84,9 @@ namespace RezerwacjaSal
                 gastronomia = value;
             }
         }
-
+        /// <summary>
+        /// Zmienna logiczna odpowiadająca na pytanie czy w budynku jest ogólnodostępne Wi-Fi
+        /// </summary>
         public bool Wifi
         {
             get
@@ -106,10 +117,10 @@ namespace RezerwacjaSal
         /// <summary>
         /// Główny konstruktor, użyteczności wpisywać za pomocą true lub false
         /// </summary>
-        /// <param name="nazwa"></param>
-        /// <param name="winda"></param>
-        /// <param name="gastronomia"></param>
-        /// <param name="wifi"></param>
+        /// <param name="nazwa">Nazwa budynku</param>
+        /// <param name="winda">Winda</param>
+        /// <param name="gastronomia">Gastronomia</param>
+        /// <param name="wifi">Internet bezprzewodowy</param>
         public Budynek(string nazwa, bool winda, bool gastronomia, bool wifi)
         {
 
@@ -123,9 +134,6 @@ namespace RezerwacjaSal
         /// <summary>
         /// Dodaje salę, a jeżeli taka istnieje to wypisuje komunikat a program dalej działa
         /// </summary>
-        /// <param name="s"></param>
-        /// 
-
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -138,6 +146,10 @@ namespace RezerwacjaSal
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Dodaje salę do budynku
+        /// </summary>
+        /// <param name="s">Obiekt typu sala</param>
         public void DodajSale(Sala s)
         {
             if (ListaSal.Exists(x => x.Nazwa == s.Nazwa))
@@ -155,7 +167,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
         /// </summary>
-        /// <param name="nazwa"></param>
+        /// <param name="nazwa">Nazwa pliku XML</param>
         public void ZapiszXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Budynek));
@@ -166,8 +178,8 @@ namespace RezerwacjaSal
         /// <summary>
         /// Deserializacja z pliku do obiektu zwracanego przez metodę 
         /// </summary>
-        /// <param name="nazwa"></param>
-        /// <returns></returns>
+        /// <param name="nazwa">Nazwa pliku XML</param>
+        /// <returns>Zwraca obiekt typu Budynek</returns>
         public static Budynek OdczytajXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Budynek));

@@ -31,9 +31,11 @@
       <DocumentationSource sourceFile="..\RezerwacjeGUI\RezerwacjeGUI.csproj" />
     </DocumentationSources>
     <NamespaceSummaries>
-      <NamespaceSummaryItem name="(global)" isDocumented="False">Dokumentacja stworzona w Sandcastle</NamespaceSummaryItem>
-<NamespaceSummaryItem name="RezerwacjaSal" isDocumented="True">Dokumentacja podstawowych klas stworzona w Sandcastle</NamespaceSummaryItem>
-<NamespaceSummaryItem name="RezerwacjeGUI" isDocumented="True">Dokumentacja GUI stworzona w Sandcastle</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="True">Dokumentacja stworzona w Sandcastle</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="RezerwacjaSal" isDocumented="True">Dokumentacja podstawowych klas stworzona w Sandcastle</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="RezerwacjeGUI" isDocumented="True">Dokumentacja GUI stworzona w Sandcastle</NamespaceSummaryItem>
+    </NamespaceSummaries>
+    <ProjectSummary>Dokumantacja projektu aplikacji do rezerwowania sal, stworzonego w ramach kursu Programowanie obiektowe 2018/2019</ProjectSummary>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

@@ -113,3 +113,5 @@ C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaS
 C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.exe
 C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\obj\Debug\RezerwacjeGUI.pdb
 C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\RezerwacjeGUI.XML
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\EntityFramework.dll
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjeGUI\bin\Debug\EntityFramework.xml

@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 namespace RezerwacjaSal
 {
     /// <summary>
@@ -13,7 +16,7 @@ namespace RezerwacjaSal
     /// Wchodzi w skład klasy Sala.
     /// Wykorzystuje interfejsy IComparable i ICloneable, podlega serializacji xml.
     /// </summary>
-    public class Rezerwacja: IComparable<Rezerwacja>,ICloneable
+    public class Rezerwacja : IComparable<Rezerwacja>, ICloneable
     {
         /**********************************************************  Pola  **/
         private int numer; // -1 oznacza pusty konstruktor, 0 oznacza że nie ma na liście rezerwacji, liczba naturalna jest na liście
@@ -22,7 +25,12 @@ namespace RezerwacjaSal
         private TimeSpan godz_pocz;
         private TimeSpan godzina_końcowa;
         private static int kolejność_rezerwacji = 0;
+        //public string Pesel { get; set; } // dodane
         /**********************************************************  Właściwości  **/
+        /// <summary>
+        /// Nr rezerwacji pozwalający na jej identyfikację
+        /// </summary>
+        [Key]
         public int Numer
         {
             get
@@ -38,7 +46,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Sprawdza czy najemca nie był utworzony pustym konstruktorem
         /// </summary>
-        public Najemca Najem
+        public Najemca Najem // dodane virtual
         {
             get
             {
@@ -69,7 +77,7 @@ namespace RezerwacjaSal
                 if (value.Date < DateTime.Now.Date)
                 {
                     //throw new KonstruktorException("Zła data w rezerwacji");
-                    
+
                 }
                 else
                 {
@@ -81,6 +89,7 @@ namespace RezerwacjaSal
         /// Sprawdza czy godzina nie jest ustawiana na przeszłość, nie podlega serializacji bo to TimeSpan
         /// </summary>
         [XmlIgnore]
+        [NotMappedAttribute]
         public TimeSpan Godz_pocz
         {
             get
@@ -114,6 +123,7 @@ namespace RezerwacjaSal
         /// Sprawdza czy godzina nie jest ustawiana na przeszłość, nie podlega serializacji bo to TimeSpan
         /// </summary>
         [XmlIgnore]
+        [NotMapped]
         public TimeSpan Godzina_końcowa
         {
             get
@@ -182,10 +192,10 @@ namespace RezerwacjaSal
         /// Możliwe formaty daty: "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MMM-yy", "dd/MM/yyyy", "dd-MM-yyyy"
         /// Format godziny: "H:mm"
         /// </summary>
-        /// <param name="najemca"></param>
-        /// <param name="dzień"></param>
-        /// <param name="godzina_początkowa"></param>
-        /// <param name="godzina_końcowa"></param>
+        /// <param name="najemca"> Obiekt klasy najemca</param>
+        /// <param name="dzień"> Dzień w którym chcemy dokonać rezerwacji</param>
+        /// <param name="godzina_początkowa"> Godzina początkowa rezerwacji</param>
+        /// <param name="godzina_końcowa">Godzina końcowa rezerwacji</param>
         public Rezerwacja(Najemca najemca, string dzień, string godzina_początkowa, string godzina_końcowa)
         {
             Numer = 0;
@@ -194,7 +204,7 @@ namespace RezerwacjaSal
             DateTime.TryParseExact(dzień, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MMM-yy", "dd/MM/yyyy", "dd-MM-yyyy" }, null, DateTimeStyles.None, out newDay);
             Dzień = newDay;//
             DateTime nowaGodzinaPocz;
-            if(!DateTime.TryParseExact(godzina_początkowa,"H:mm", null, DateTimeStyles.None, out nowaGodzinaPocz))
+            if (!DateTime.TryParseExact(godzina_początkowa, "H:mm", null, DateTimeStyles.None, out nowaGodzinaPocz))
             {
                 throw new KonstruktorException("Zły format godziny początkowej");
             }
@@ -205,7 +215,7 @@ namespace RezerwacjaSal
                 throw new KonstruktorException("Zły format godziny końcowej");
             }
             Godzina_końcowa = nowaGodzinaKoń.TimeOfDay;
-            if(Godzina_końcowa <= Godz_pocz)
+            if (Godzina_końcowa <= Godz_pocz)
             {
                 throw new KonstruktorException("godzina początkowa nie może być większa od końcowej");
             }
@@ -214,7 +224,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Zwraca string zawierający: numer rezerwacji, dane najemcy, datę, godziny
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Zwraca opis rezerwacji</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -228,14 +238,15 @@ namespace RezerwacjaSal
         /// <summary>
         /// porównuje Rezerwacje najpierw po dniu potem na podstawie godziny początkowej
         /// </summary>
-        /// <param name="r"></param>
+        /// <param name="r">Obiekt typu rezerwacja</param>
         /// <returns></returns>
         public int CompareTo(Rezerwacja r)
         {
-            if(Dzień < r.Dzień)
+            if (Dzień < r.Dzień)
             {
                 return -1;
-            }else if (Dzień == r.Dzień)
+            }
+            else if (Dzień == r.Dzień)
             {
                 return Godz_pocz.CompareTo(r.Godz_pocz);
             }
@@ -244,7 +255,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
         /// </summary>
-        /// <param name="nazwa"></param>
+        /// <param name="nazwa">Nazwa pliku XML</param>
         public void ZapiszXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Rezerwacja));
@@ -255,7 +266,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Deserializacja z pliku do obiektu zwracanego przez metodę 
         /// </summary>
-        /// <param name="nazwa"></param>
+        /// <param name="nazwa">Nazwa pliku XML</param>
         /// <returns></returns>
         public static Rezerwacja OdczytajXml(string nazwa)
         {
@@ -270,11 +281,34 @@ namespace RezerwacjaSal
         /// Klonowanie polega na serializacji obecnej instancji do pliku o nazwie "Klonowanie_najemcy.xml",
         /// a następnie deserializacji z tego pliku do zupełnie nowego obiektu, który jest zwracany przez metodę
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Zwraca obiekt będący lonem</returns>
         public object Clone()
         {
             ZapiszXml("Klonowanie_Rezerwacja");
             return OdczytajXml("Klonowanie_Rezerwacja");
         }
+        //public void ZapisSQL()
+        //{
+        //    using (var db = new ModelContext())
+        //    {
+        //        var query = from b in db.Rezerwacje
+        //                    select b;
+        //        foreach (var item in query)
+        //        {
+        //            if (item.Numer == this.Numer)
+        //            {
+        //                Console.WriteLine("Taki rekord już istnieje");
+        //                return;
+
+        //            }
+
+
+        //        }
+        //        this.Najem = db.Najemcy.Find(this.Najem.Pesel);
+        //        this.numer+=3;
+        //        db.Rezerwacje.Add(this);
+        //        db.SaveChanges();
+        //    }
+        //}
     }
 }

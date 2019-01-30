@@ -64,20 +64,8 @@
           <Id>1</Id>
           <Typ>aula</Typ>
           <Pojemność>105</Pojemność>
-          <ListaRezerwacji>
-            <Rezerwacja>
-              <Numer>16</Numer>
-              <Najem Id="98052408891">
-                <Imię>JAKUB</Imię>
-                <Płeć>M</Płeć>
-                <Nazwisko>GÓROWSKI</Nazwisko>
-              </Najem>
-              <Dzień>2019-01-24T00:00:00</Dzień>
-              <Godz_pocz_serializacja>468000000000</Godz_pocz_serializacja>
-              <Godzina_końcowa_serializacja>504000000000</Godzina_końcowa_serializacja>
-            </Rezerwacja>
-          </ListaRezerwacji>
-          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
         </Sala>
       </ListaSal>
       <Winda>true</Winda>
@@ -142,40 +130,16 @@
           <Id>2</Id>
           <Typ>aula</Typ>
           <Pojemność>250</Pojemność>
-          <ListaRezerwacji>
-            <Rezerwacja>
-              <Numer>9</Numer>
-              <Najem Id="98052408891">
-                <Imię>JAKUB</Imię>
-                <Płeć>M</Płeć>
-                <Nazwisko>GÓROWSKI</Nazwisko>
-              </Najem>
-              <Dzień>2019-01-29T00:00:00</Dzień>
-              <Godz_pocz_serializacja>468000000000</Godz_pocz_serializacja>
-              <Godzina_końcowa_serializacja>720000000000</Godzina_końcowa_serializacja>
-            </Rezerwacja>
-          </ListaRezerwacji>
-          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
         </Sala>
         <Sala>
           <Nazwa>Sala Odlewnicza</Nazwa>
           <Id>2</Id>
           <Typ>ćwiczeniowa</Typ>
           <Pojemność>20</Pojemność>
-          <ListaRezerwacji>
-            <Rezerwacja>
-              <Numer>10</Numer>
-              <Najem Id="98052408891">
-                <Imię>JAKUB</Imię>
-                <Płeć>M</Płeć>
-                <Nazwisko>GÓROWSKI</Nazwisko>
-              </Najem>
-              <Dzień>2019-01-19T00:00:00</Dzień>
-              <Godz_pocz_serializacja>432000000000</Godz_pocz_serializacja>
-              <Godzina_końcowa_serializacja>468000000000</Godzina_końcowa_serializacja>
-            </Rezerwacja>
-          </ListaRezerwacji>
-          <LiczbaRezerwacji>1</LiczbaRezerwacji>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
         </Sala>
       </ListaSal>
       <Winda>false</Winda>
@@ -256,6 +220,21 @@
       <Gastronomia>false</Gastronomia>
       <Wifi>false</Wifi>
     </Budynek>
+    <Budynek Id="A-1">
+      <ListaSal>
+        <Sala>
+          <Nazwa>203</Nazwa>
+          <Id>2</Id>
+          <Typ>aula</Typ>
+          <Pojemność>250</Pojemność>
+          <ListaRezerwacji />
+          <LiczbaRezerwacji>0</LiczbaRezerwacji>
+        </Sala>
+      </ListaSal>
+      <Winda>true</Winda>
+      <Gastronomia>true</Gastronomia>
+      <Wifi>false</Wifi>
+    </Budynek>
   </SpisBudynkow>
   <ListaNajemcow>
     <Najemca Id="98080404212">
@@ -267,11 +246,6 @@
       <Imię>JAKUB</Imię>
       <Płeć>M</Płeć>
       <Nazwisko>GÓROWSKI</Nazwisko>
-    </Najemca>
-    <Najemca Id="92071314764">
-      <Imię>AGNIESZKA</Imię>
-      <Płeć>K</Płeć>
-      <Nazwisko>NOWAK</Nazwisko>
     </Najemca>
   </ListaNajemcow>
   <RezerwacjeRazem>0</RezerwacjeRazem>

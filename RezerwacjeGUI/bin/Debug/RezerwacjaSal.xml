@@ -9,6 +9,31 @@
             Klasa zawiera podstawowe dane o budynku: wchodzące w jego skład sale i informacje o użytecznościach np. windzie
             </summary>
         </member>
+        <member name="P:RezerwacjaSal.Budynek.Nazwa">
+            <summary>
+            Nazwa budynku
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Budynek.ListaSal">
+            <summary>
+            Lista sal w budynku
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Budynek.Winda">
+            <summary>
+            Zmienna logiczna odpowiadająca na pytanie czy w budynku jest winda
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Budynek.Gastronomia">
+            <summary>
+            Zmienna logiczna odpowiadająca na pytanie czy w budynku jest zaplecze gastronomiczne
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Budynek.Wifi">
+            <summary>
+            Zmienna logiczna odpowiadająca na pytanie czy w budynku jest ogólnodostępne Wi-Fi
+            </summary>
+        </member>
         <member name="M:RezerwacjaSal.Budynek.#ctor">
             <summary>
             Pusty konstruktor na potrzevy serializacji, nie zaleca się jego używania
@@ -18,30 +43,34 @@
             <summary>
             Główny konstruktor, użyteczności wpisywać za pomocą true lub false
             </summary>
-            <param name="nazwa"></param>
-            <param name="winda"></param>
-            <param name="gastronomia"></param>
-            <param name="wifi"></param>
+            <param name="nazwa">Nazwa budynku</param>
+            <param name="winda">Winda</param>
+            <param name="gastronomia">Gastronomia</param>
+            <param name="wifi">Internet bezprzewodowy</param>
         </member>
         <member name="M:RezerwacjaSal.Budynek.ToString">
             <summary>
             Dodaje salę, a jeżeli taka istnieje to wypisuje komunikat a program dalej działa
             </summary>
-            <param name="s"></param>
-            
+        </member>
+        <member name="M:RezerwacjaSal.Budynek.DodajSale(RezerwacjaSal.Sala)">
+            <summary>
+            Dodaje salę do budynku
+            </summary>
+            <param name="s">Obiekt typu sala</param>
         </member>
         <member name="M:RezerwacjaSal.Budynek.ZapiszXml(System.String)">
             <summary>
             Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa">Nazwa pliku XML</param>
         </member>
         <member name="M:RezerwacjaSal.Budynek.OdczytajXml(System.String)">
             <summary>
             Deserializacja z pliku do obiektu zwracanego przez metodę 
             </summary>
-            <param name="nazwa"></param>
-            <returns></returns>
+            <param name="nazwa">Nazwa pliku XML</param>
+            <returns>Zwraca obiekt typu Budynek</returns>
         </member>
         <member name="M:RezerwacjaSal.Budynek.Clone">
             <summary>
@@ -91,6 +120,32 @@
             </summary>
             <param name="str"></param>
         </member>
+        <member name="T:RezerwacjaSal.ModelContext">
+            <summary>
+            Klasa uzywana w podejściu Code First - odwzorowuje strukturę kodu w nową bazę danych
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.ModelContext.Najemcy">
+            <summary>
+            Tabela zawierająca najemców
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.ModelContext.Rezerwacje">
+            <summary>
+            Tabela zawierająca Rezerwacje
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.ModelContext.Sale">
+            <summary>
+            Tabela zawierająca sale
+            </summary>
+        </member>
+        <member name="T:RezerwacjaSal.Płcie">
+            <summary>
+            Zmienna enumerowana opisująca płeć
+            
+            </summary>
+        </member>
         <member name="T:RezerwacjaSal.Najemca">
             <summary>
             Klasa zawiera podstawowe dane o najemcy, który może zarezerwować salę.
@@ -101,10 +156,22 @@
         </member>
         <member name="P:RezerwacjaSal.Najemca.Imię">
             <summary>
-            String musi być dłuższy niż 1 i zawierać wyłącznie znaki polksiego alfabetu
+            Imię jest typu string, musi być ono dłuższe niż 1 i zawierać wyłącznie znaki polksiego alfabetu 
             </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Najemca.Pesel">
             <summary>
-            String musi być dłuższy niż 1 i zawierać wyłącznie znaki polksiego alfabetu
+            Pesel musi być stringiem o 11 cyfr i posiadać poprawną cyfrę kontrolną
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Najemca.Płeć">
+            <summary>
+            Enumerator  Plcie zawiera dane nt płci
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Najemca.Nazwisko">
+            <summary>
+            Nazwsko musi mieć więcej niż 1 znak
             </summary>
         </member>
         <member name="M:RezerwacjaSal.Najemca.#ctor">
@@ -116,44 +183,66 @@
             <summary>
             Główny konstruktor podczas pracy z programem używać tylko jego, używa właściwości sprawdzających poprawność danych
             </summary>
-            <param name="imię"></param>
-            <param name="nazwisko"></param>
-            <param name="pesel"></param>
-            <param name="płeć"></param>
+            <param name="imię"> Obiekt typu string zawierający imię</param>
+            <param name="nazwisko"> Obiekt typu string zawierający nazwisko</param>
+            <param name="pesel">Obiekt typu string zawierający PESEL</param>
+            <param name="płeć">Obiekt typu Plcie (enum) przechowujący Płeć</param>
         </member>
         <member name="M:RezerwacjaSal.Najemca.ToString">
             <summary>
             Zwraca sformatowany string zawierający: imie, nazwisko, płeć, 
             pesel jest pomijany ponieważ stanowi hasło do usuwania rezerwacji
             </summary>
-            <returns></returns>
+            <returns> Zwracany jest opis konkretnego najemcy</returns>
         </member>
         <member name="M:RezerwacjaSal.Najemca.ZapiszXml(System.String)">
             <summary>
             Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa"> Nazwa plku XML</param>
         </member>
         <member name="M:RezerwacjaSal.Najemca.OdczytajXml(System.String)">
             <summary>
             Deserializacja z pliku do obiektu zwracanego przez metodę 
             </summary>
-            <param name="nazwa"></param>
-            <returns></returns>
+            <param name="nazwa">Nazwa pliku XML</param>
+            <returns> Zwraca obiekt typu Najemca</returns>
         </member>
         <member name="M:RezerwacjaSal.Najemca.Clone">
             <summary>
-            Konieczne może być rzutowanie obiektu po klonowaniu!!!
+            Konieczne może być rzutowanie obiektu po klonowaniu!
             Klonowanie polega na serializacji obecnej instancji do pliku o nazwie "Klonowanie_najemcy.xml",
             a następnie deserializacji z tego pliku do zupełnie nowego obiektu, który jest zwracany przez metodę
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:RezerwacjaSal.Najemca.sprawdzPESEL(System.String)">
+            <summary>
+            Metoda sprawdzająca czy podany PESEL jest poprawny
+            </summary>
+            <param name="PESEL">Obiekt typu string zawierający PESEL</param>
+            <returns> Wartość true oznacza poprawność nr PESEL</returns>
+        </member>
+        <member name="M:RezerwacjaSal.Najemca.ZapisSQL">
+            <summary>
+            Metoda zapisująca najemców do bazy danych SQL
+            </summary>
+        </member>
+        <member name="M:RezerwacjaSal.Najemca.WypiszQuery">
+            <summary>
+            Przykładowe zapytanie skierowane do bazy danych, wypisywane w konsoli
+            </summary>
         </member>
         <member name="T:RezerwacjaSal.Rezerwacja">
             <summary>
             Klasa zawiera dane o rezerwacji m.in. dane najemcy, datę i czas.
             Wchodzi w skład klasy Sala.
             Wykorzystuje interfejsy IComparable i ICloneable, podlega serializacji xml.
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Rezerwacja.Numer">
+            <summary>
+            Nr rezerwacji pozwalający na jej identyfikację
             </summary>
         </member>
         <member name="P:RezerwacjaSal.Rezerwacja.Najem">
@@ -202,35 +291,35 @@
             Możliwe formaty daty: "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MMM-yy", "dd/MM/yyyy", "dd-MM-yyyy"
             Format godziny: "H:mm"
             </summary>
-            <param name="najemca"></param>
-            <param name="dzień"></param>
-            <param name="godzina_początkowa"></param>
-            <param name="godzina_końcowa"></param>
+            <param name="najemca"> Obiekt klasy najemca</param>
+            <param name="dzień"> Dzień w którym chcemy dokonać rezerwacji</param>
+            <param name="godzina_początkowa"> Godzina początkowa rezerwacji</param>
+            <param name="godzina_końcowa">Godzina końcowa rezerwacji</param>
         </member>
         <member name="M:RezerwacjaSal.Rezerwacja.ToString">
             <summary>
             Zwraca string zawierający: numer rezerwacji, dane najemcy, datę, godziny
             </summary>
-            <returns></returns>
+            <returns> Zwraca opis rezerwacji</returns>
         </member>
         <member name="M:RezerwacjaSal.Rezerwacja.CompareTo(RezerwacjaSal.Rezerwacja)">
             <summary>
             porównuje Rezerwacje najpierw po dniu potem na podstawie godziny początkowej
             </summary>
-            <param name="r"></param>
+            <param name="r">Obiekt typu rezerwacja</param>
             <returns></returns>
         </member>
         <member name="M:RezerwacjaSal.Rezerwacja.ZapiszXml(System.String)">
             <summary>
             Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa">Nazwa pliku XML</param>
         </member>
         <member name="M:RezerwacjaSal.Rezerwacja.OdczytajXml(System.String)">
             <summary>
             Deserializacja z pliku do obiektu zwracanego przez metodę 
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa">Nazwa pliku XML</param>
             <returns></returns>
         </member>
         <member name="M:RezerwacjaSal.Rezerwacja.Clone">
@@ -239,7 +328,12 @@
             Klonowanie polega na serializacji obecnej instancji do pliku o nazwie "Klonowanie_najemcy.xml",
             a następnie deserializacji z tego pliku do zupełnie nowego obiektu, który jest zwracany przez metodę
             </summary>
-            <returns></returns>
+            <returns> Zwraca obiekt będący lonem</returns>
+        </member>
+        <member name="T:RezerwacjaSal.Właściwość">
+            <summary>
+            Enumerator oznaczający typ sali
+            </summary>
         </member>
         <member name="T:RezerwacjaSal.Sala">
             <summary>
@@ -253,6 +347,36 @@
             Służy do automatycznego nadawania id
             </summary>
         </member>
+        <member name="P:RezerwacjaSal.Sala.Id">
+            <summary>
+            Id nadaje unikalny nr sali w budynku
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Sala.Typ">
+            <summary>
+            Typ sali (zmienna enumerowana)
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Sala.Pojemność">
+            <summary>
+            Pojemność oznacza ile miejsc znajduje sięw sali
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Sala.ListaRezerwacji">
+            <summary>
+            Lista rezerwacji danej sali
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Sala.LiczbaRezerwacji">
+            <summary>
+            Liczba rezerwacji danej sali
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Sala.Kolejność_sal">
+            <summary>
+            Zmienna statyczna oznaczająca kolejność sal
+            </summary>
+        </member>
         <member name="M:RezerwacjaSal.Sala.#ctor">
             <summary>
             Pusty konstruktor na potrzeby serializacji, ustawia Id na -1 tak można rozpoznać obiekt
@@ -262,9 +386,9 @@
             <summary>
             Główny konstruktor do pracy w programie
             </summary>
-            <param name="nazwa"></param>
-            <param name="typ"></param>
-            <param name="pojemność"></param>
+            <param name="nazwa">Nazwa sali</param>
+            <param name="typ">Typ sali</param>
+            <param name="pojemność">Liczba miejsc</param>
         </member>
         <member name="M:RezerwacjaSal.Sala.ToString">
             <summary>
@@ -277,44 +401,44 @@
             Metoda sprawdza, czy rezerwacja o danej godzinie początkowej i końcowej jest możliwa
             </summary>
             <param name="r">Obiekt rezerwacja</param>
-            <returns></returns>
+            <returns>Zwraca prawdę, gdy można dodać rezerwację</returns>
         </member>
         <member name="M:RezerwacjaSal.Sala.DodajRezerwację(RezerwacjaSal.Rezerwacja)">
             <summary>
             Dodawanie rezerwacji, gdy jest zajęta wyskakuje komunikat ale pracujemy dalej, gdy doda się sale pomyślnie
             dostaje ona przydzielony numer, lista sortowana jest po każdym dodaniu
             </summary>
-            <param name="r"></param>
+            <param name="r">Obiekt typu rezerwacja</param>
         </member>
         <member name="M:RezerwacjaSal.Sala.DodajRezerwację(RezerwacjaSal.Rezerwacja,System.Int32)">
             <summary>
             Metoda dodawani sali z ręcznym ustawieniem numeru. Używana w czasie inicjalizacji GUI
             </summary>
-            <param name="r"></param>
-            <param name="nr"></param>
+            <param name="r">Obiekt typu rezerwacja</param>
+            <param name="nr">Ręcznie podany nr rezerwacji</param>
         </member>
         <member name="M:RezerwacjaSal.Sala.UsuńRezerwację(RezerwacjaSal.Rezerwacja,System.String)">
             <summary>
             Usuwa rezerwację jeżeli poda się prawidłowy pesel, pierwszym argumentem powinna być funkcja ZnajdźRezerwację
             z oodpowiednim parametrem wyszukiwania
             </summary>
-            <param name="r"></param>
-            <param name="pesel"></param>
+            <param name="r">Obiekt typu rezerwacja</param>
+            <param name="pesel">Pesel jest jednicześnie hasłem</param>
         </member>
         <member name="M:RezerwacjaSal.Sala.ZnajdźRezerwację(System.Int32)">
             <summary>
             Zwraca obiekt rezerwacja o podanym numerze, gdy takiego nie ma wyrzuca wyjątek
             </summary>
-            <param name="numer"></param>
-            <returns></returns>
+            <param name="numer">Unikalny dla każdej rezerwacji nr</param>
+            <returns>Zwaca obiekt typu rezerwacja</returns>
         </member>
         <member name="M:RezerwacjaSal.Sala.ZnajdźRezerwację(System.DateTime,System.String,System.String)">
             <summary>
             Zwraca obiekt o podanej dacie i czasie, zwraca wyjątek gdy takiego nie ma lub format argumentów jest zły
             </summary>
-            <param name="dzień"></param>
-            <param name="godzina_początkowa"></param>
-            <param name="godzina_końcowa"></param>
+            <param name="dzień">Dzień w którrym szukamy rezerwacji</param>
+            <param name="godzina_początkowa">Godzina początkowa poszukiwanego zakresu</param>
+            <param name="godzina_końcowa">Godzina kończąca zakres</param>
             <returns></returns>
         </member>
         <member name="M:RezerwacjaSal.Sala.Sortuj">
@@ -326,21 +450,21 @@
             <summary>
             Za kryterium porównywania obiektów przyjmuje nazwę
             </summary>
-            <param name="s"></param>
+            <param name="s">Obiekt typu sala</param>
             <returns></returns>
         </member>
         <member name="M:RezerwacjaSal.Sala.ZapiszXml(System.String)">
             <summary>
             Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa">Nazwa pliku XML</param>
         </member>
         <member name="M:RezerwacjaSal.Sala.OdczytajXml(System.String)">
             <summary>
             Deserializacja z pliku do obiektu zwracanego przez metodę 
             </summary>
-            <param name="nazwa"></param>
-            <returns></returns>
+            <param name="nazwa">Nazwa pliku XML</param>
+            <returns>Zwraca obiekt typu sala</returns>
         </member>
         <member name="M:RezerwacjaSal.Sala.Clone">
             <summary>
@@ -352,20 +476,82 @@
         </member>
         <member name="T:RezerwacjaSal.Zbior">
             <summary>
-            Klasa zawiera listę wszystkich klientów (najemców) oraz budynków. Powstała w celu ułatwinia współpracy z GUI
+            Klasa agregująca, zawiera listę wszystkich klientów (najemców) oraz budynków. Powstała w celu ułatwinia współpracy z GUI
             </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Zbior.SpisBudynkow">
+            <summary>
+            Wszystkie budynki są agregowane w listę
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Zbior.ListaNajemcow">
+            <summary>
+            Wszyscy najemcy są agregowani w listę
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Zbior.RezerwacjeRazem">
+            <summary>
+            Rezerwacje są łączone w jedną listę
+            </summary>
+        </member>
+        <member name="P:RezerwacjaSal.Zbior.Numer">
+            <summary>
+            Każda rezerwacja posiada swój nr
+            </summary>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.#ctor">
+            <summary>
+            Pusty konstruktor
+            </summary>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.ToString">
+            <summary>
+            Metoda wypisująca Zbior
+            </summary>
+            <returns>Zwraca obiekt typu string builder przekonwertowany na stringa</returns>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.DodajBudynek(RezerwacjaSal.Budynek)">
+            <summary>
+            Metoda pozwalająca na dodanie nowego budynku
+            </summary>
+            <param name="b">Obiekt typu budynek</param>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.UsunBudynek(RezerwacjaSal.Budynek)">
+            <summary>
+            Metoda pozwalająca na usunięcie budynku
+            </summary>
+            <param name="b">Obiekt typu budynek</param>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.DodajNajemce(RezerwacjaSal.Najemca)">
+            <summary>
+            Metoda pozwalająca nadodanie nowego najemcy
+            </summary>
+            <param name="n">Obiekt Najemca</param>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.UsunNajemce(RezerwacjaSal.Najemca)">
+            <summary>
+            Metoda pozwalająca na usunięcie najemcy
+            </summary>
+            <param name="n"></param>
+        </member>
+        <member name="M:RezerwacjaSal.Zbior.WypiszSale(System.Int32)">
+            <summary>
+            Metoda wypisująca sale, tak aby były dobrze widoczne w GUI
+            </summary>
+            <param name="i">Zmenna iteracyjna</param>
+            <returns>Zwraca listę sal</returns>
         </member>
         <member name="M:RezerwacjaSal.Zbior.ZapiszXml(System.String)">
             <summary>
             Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa">Nazwapliku XML</param>
         </member>
         <member name="M:RezerwacjaSal.Zbior.OdczytajXml(System.String)">
             <summary>
             Deserializacja z pliku do obiektu zwracanego przez metodę 
             </summary>
-            <param name="nazwa"></param>
+            <param name="nazwa"> Nazwa pliku (bez rozszerzenia .xml )</param>
             <returns></returns>
         </member>
     </members>

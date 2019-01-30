@@ -6,8 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace RezerwacjaSal
 {
+    /// <summary>
+    /// Enumerator oznaczający typ sali
+    /// </summary>
     public enum Właściwość { komputerowa, aula, ćwiczeniowa}
     /// <summary>
     /// Klasa zawiera podstawowe dane o sali oraz wszystkie rezerwacje tej sali.
@@ -30,7 +36,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Służy do automatycznego nadawania id
         /// </summary>
-        
+        [Key]
         public string Nazwa
         {
             get
@@ -47,7 +53,10 @@ namespace RezerwacjaSal
                 nazwa = value;
             }
         }
-
+        /// <summary>
+        /// Id nadaje unikalny nr sali w budynku
+        /// </summary>
+        [NotMapped]
         public int Id
         {
             get
@@ -60,7 +69,9 @@ namespace RezerwacjaSal
                 id = value;
             }
         }
-
+        /// <summary>
+        /// Typ sali (zmienna enumerowana)
+        /// </summary>
         public Właściwość Typ
         {
             get
@@ -73,7 +84,9 @@ namespace RezerwacjaSal
                 typ = value;
             }
         }
-
+        /// <summary>
+        /// Pojemność oznacza ile miejsc znajduje sięw sali
+        /// </summary>
         public int Pojemność
         {
             get
@@ -86,8 +99,10 @@ namespace RezerwacjaSal
                 pojemność = value;
             }
         }
-
-        public List<Rezerwacja> ListaRezerwacji
+        /// <summary>
+        /// Lista rezerwacji danej sali
+        /// </summary>
+        public  List<Rezerwacja> ListaRezerwacji
         {
             get
             {
@@ -99,7 +114,9 @@ namespace RezerwacjaSal
                 listaRezerwacji = value;
             }
         }
-
+        /// <summary>
+        /// Liczba rezerwacji danej sali
+        /// </summary>
         public int LiczbaRezerwacji
         {
             get
@@ -112,7 +129,9 @@ namespace RezerwacjaSal
                 liczbaRezerwacji = value;
             }
         }
-
+        /// <summary>
+        /// Zmienna statyczna oznaczająca kolejność sal
+        /// </summary>
         public static int Kolejność_sal
         {
             get
@@ -142,9 +161,9 @@ namespace RezerwacjaSal
         /// <summary>
         /// Główny konstruktor do pracy w programie
         /// </summary>
-        /// <param name="nazwa"></param>
-        /// <param name="typ"></param>
-        /// <param name="pojemność"></param>
+        /// <param name="nazwa">Nazwa sali</param>
+        /// <param name="typ">Typ sali</param>
+        /// <param name="pojemność">Liczba miejsc</param>
         public Sala(string nazwa, Właściwość typ, int pojemność)
         {
             Nazwa = nazwa;
@@ -190,7 +209,7 @@ namespace RezerwacjaSal
         /// Metoda sprawdza, czy rezerwacja o danej godzinie początkowej i końcowej jest możliwa
         /// </summary>
         /// <param name="r">Obiekt rezerwacja</param>
-        /// <returns></returns>
+        /// <returns>Zwraca prawdę, gdy można dodać rezerwację</returns>
         public bool SprawdźRezerwację(Rezerwacja r)
         {
             //if(r.Numer == -1)
@@ -224,7 +243,7 @@ namespace RezerwacjaSal
         /// Dodawanie rezerwacji, gdy jest zajęta wyskakuje komunikat ale pracujemy dalej, gdy doda się sale pomyślnie
         /// dostaje ona przydzielony numer, lista sortowana jest po każdym dodaniu
         /// </summary>
-        /// <param name="r"></param>
+        /// <param name="r">Obiekt typu rezerwacja</param>
         public void DodajRezerwację(Rezerwacja r)
         {
             if (SprawdźRezerwację(r))
@@ -242,8 +261,8 @@ namespace RezerwacjaSal
         /// <summary>
         /// Metoda dodawani sali z ręcznym ustawieniem numeru. Używana w czasie inicjalizacji GUI
         /// </summary>
-        /// <param name="r"></param>
-        /// <param name="nr"></param>
+        /// <param name="r">Obiekt typu rezerwacja</param>
+        /// <param name="nr">Ręcznie podany nr rezerwacji</param>
         public void DodajRezerwację(Rezerwacja r, int nr)
         {
             if (SprawdźRezerwację(r))
@@ -269,8 +288,8 @@ namespace RezerwacjaSal
         /// Usuwa rezerwację jeżeli poda się prawidłowy pesel, pierwszym argumentem powinna być funkcja ZnajdźRezerwację
         /// z oodpowiednim parametrem wyszukiwania
         /// </summary>
-        /// <param name="r"></param>
-        /// <param name="pesel"></param>
+        /// <param name="r">Obiekt typu rezerwacja</param>
+        /// <param name="pesel">Pesel jest jednicześnie hasłem</param>
         public void UsuńRezerwację(Rezerwacja r, string pesel)
         {
             if (r.Najem.Pesel == pesel)
@@ -287,8 +306,8 @@ namespace RezerwacjaSal
         /// <summary>
         /// Zwraca obiekt rezerwacja o podanym numerze, gdy takiego nie ma wyrzuca wyjątek
         /// </summary>
-        /// <param name="numer"></param>
-        /// <returns></returns>
+        /// <param name="numer">Unikalny dla każdej rezerwacji nr</param>
+        /// <returns>Zwaca obiekt typu rezerwacja</returns>
         public Rezerwacja ZnajdźRezerwację(int numer)
         {
             return ListaRezerwacji.Find(x => x.Numer == numer);
@@ -296,9 +315,9 @@ namespace RezerwacjaSal
         /// <summary>
         /// Zwraca obiekt o podanej dacie i czasie, zwraca wyjątek gdy takiego nie ma lub format argumentów jest zły
         /// </summary>
-        /// <param name="dzień"></param>
-        /// <param name="godzina_początkowa"></param>
-        /// <param name="godzina_końcowa"></param>
+        /// <param name="dzień">Dzień w którrym szukamy rezerwacji</param>
+        /// <param name="godzina_początkowa">Godzina początkowa poszukiwanego zakresu</param>
+        /// <param name="godzina_końcowa">Godzina kończąca zakres</param>
         /// <returns></returns>
         public List<Rezerwacja> ZnajdźRezerwację(DateTime dzień,string godzina_początkowa,string godzina_końcowa)
         {
@@ -331,7 +350,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Za kryterium porównywania obiektów przyjmuje nazwę
         /// </summary>
-        /// <param name="s"></param>
+        /// <param name="s">Obiekt typu sala</param>
         /// <returns></returns>
         public int CompareTo(Sala s)
         {
@@ -340,7 +359,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
         /// </summary>
-        /// <param name="nazwa"></param>
+        /// <param name="nazwa">Nazwa pliku XML</param>
         public void ZapiszXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Sala));
@@ -351,8 +370,8 @@ namespace RezerwacjaSal
         /// <summary>
         /// Deserializacja z pliku do obiektu zwracanego przez metodę 
         /// </summary>
-        /// <param name="nazwa"></param>
-        /// <returns></returns>
+        /// <param name="nazwa">Nazwa pliku XML</param>
+        /// <returns>Zwraca obiekt typu sala</returns>
         public static Sala OdczytajXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Sala));
@@ -373,5 +392,29 @@ namespace RezerwacjaSal
             return OdczytajXml("Klonowanie_Sali");
         }
 
+        //public void ZapisSQL()
+        //{
+        //    using (var db = new ModelContext())
+        //    {
+        //        var query = from b in db.Sale
+        //                    select b;
+        //        foreach (var item in query)
+        //        {
+        //            if (item.Nazwa == this.Nazwa)
+        //            {
+        //                Console.WriteLine("Taki rekord już istnieje");
+        //                return;
+
+        //            }
+
+
+        //        }
+                
+                
+        //        //this.numer += 3;
+        //        db.Sale.Add(this);
+        //        db.SaveChanges();
+        //    }
+        }
     }
-}
+

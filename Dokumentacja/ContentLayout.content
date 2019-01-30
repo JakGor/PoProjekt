@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="6350f7a1-b573-4b7b-8387-14093d6f8c9a" visible="True" isDefault="true" isSelected="true" title="Welcome to the [TODO: Add project name]">
+  <Topic id="6350f7a1-b573-4b7b-8387-14093d6f8c9a" visible="True" isDefault="true" isSelected="true" title="Witamy na stronie dokumentacji dotyczącej aplikacji do rezerwacji sal">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>

@@ -5,8 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
+using System.ComponentModel.DataAnnotations;
+
 namespace RezerwacjaSal
 {
+    /// <summary>
+    /// Zmienna enumerowana opisująca płeć
+    /// 
+    /// </summary>
     public enum Płcie { K,M}
     /// <summary>
     /// Klasa zawiera podstawowe dane o najemcy, który może zarezerwować salę.
@@ -17,20 +23,17 @@ namespace RezerwacjaSal
     public class Najemca: Dodatki, ICloneable
     {
         /**********************************************************  Pola  **/
-        private string imię;
+        private string imię; 
         private string nazwisko;
         private string pesel;
         private Płcie płeć;
         /**********************************************************  Właściwości  **/
+
         /// <summary>
-        /// String musi być dłuższy niż 1 i zawierać wyłącznie znaki polksiego alfabetu
+        /// Imię jest typu string, musi być ono dłuższe niż 1 i zawierać wyłącznie znaki polksiego alfabetu 
         /// </summary>
-        
-        /// <summary>
-        /// String musi być dłuższy niż 1 i zawierać wyłącznie znaki polksiego alfabetu
-        /// </summary>
-        
-        
+
+
         public string Imię
         {
             get
@@ -50,7 +53,11 @@ namespace RezerwacjaSal
                 }
             }
         }
+        /// <summary>
+        /// Pesel musi być stringiem o 11 cyfr i posiadać poprawną cyfrę kontrolną
+        /// </summary>
         [XmlAttribute("Id")]
+        [Key]
         public string Pesel
         {
             get
@@ -70,7 +77,9 @@ namespace RezerwacjaSal
                 }
             }
         }
-
+        /// <summary>
+        /// Enumerator  Plcie zawiera dane nt płci
+        /// </summary>
         public Płcie Płeć
         {
             get
@@ -83,7 +92,9 @@ namespace RezerwacjaSal
                 płeć = value;
             }
         }
-
+        /// <summary>
+        /// Nazwsko musi mieć więcej niż 1 znak
+        /// </summary>
         public string Nazwisko
         {
             get
@@ -118,10 +129,10 @@ namespace RezerwacjaSal
         /// <summary>
         /// Główny konstruktor podczas pracy z programem używać tylko jego, używa właściwości sprawdzających poprawność danych
         /// </summary>
-        /// <param name="imię"></param>
-        /// <param name="nazwisko"></param>
-        /// <param name="pesel"></param>
-        /// <param name="płeć"></param>
+        /// <param name="imię"> Obiekt typu string zawierający imię</param>
+        /// <param name="nazwisko"> Obiekt typu string zawierający nazwisko</param>
+        /// <param name="pesel">Obiekt typu string zawierający PESEL</param>
+        /// <param name="płeć">Obiekt typu Plcie (enum) przechowujący Płeć</param>
         public Najemca(string imię, string nazwisko, string pesel, Płcie płeć)
         {
             Imię = imię;
@@ -134,7 +145,7 @@ namespace RezerwacjaSal
         /// Zwraca sformatowany string zawierający: imie, nazwisko, płeć, 
         /// pesel jest pomijany ponieważ stanowi hasło do usuwania rezerwacji
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Zwracany jest opis konkretnego najemcy</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -148,7 +159,7 @@ namespace RezerwacjaSal
         /// <summary>
         /// Serializacja obiektu do pliku o podanej nazwie, podawanej jako argument bez rozszerzenia ".xml"
         /// </summary>
-        /// <param name="nazwa"></param>
+        /// <param name="nazwa"> Nazwa plku XML</param>
         public void ZapiszXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Najemca));
@@ -159,8 +170,8 @@ namespace RezerwacjaSal
         /// <summary>
         /// Deserializacja z pliku do obiektu zwracanego przez metodę 
         /// </summary>
-        /// <param name="nazwa"></param>
-        /// <returns></returns>
+        /// <param name="nazwa">Nazwa pliku XML</param>
+        /// <returns> Zwraca obiekt typu Najemca</returns>
         public static Najemca OdczytajXml(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Najemca));
@@ -170,7 +181,7 @@ namespace RezerwacjaSal
             return tmp;
         }
         /// <summary>
-        /// Konieczne może być rzutowanie obiektu po klonowaniu!!!
+        /// Konieczne może być rzutowanie obiektu po klonowaniu!
         /// Klonowanie polega na serializacji obecnej instancji do pliku o nazwie "Klonowanie_najemcy.xml",
         /// a następnie deserializacji z tego pliku do zupełnie nowego obiektu, który jest zwracany przez metodę
         /// </summary>
@@ -181,7 +192,11 @@ namespace RezerwacjaSal
             return OdczytajXml("Klonowanie_najemcy");
         }
 
-
+        /// <summary>
+        /// Metoda sprawdzająca czy podany PESEL jest poprawny
+        /// </summary>
+        /// <param name="PESEL">Obiekt typu string zawierający PESEL</param>
+        /// <returns> Wartość true oznacza poprawność nr PESEL</returns>
         public bool sprawdzPESEL(string PESEL)
         {
 
@@ -223,6 +238,53 @@ namespace RezerwacjaSal
                 return false;
 
 
+        }
+        /// <summary>
+        /// Metoda zapisująca najemców do bazy danych SQL
+        /// </summary>
+        public void ZapisSQL()
+        {
+            using (var db = new ModelContext())
+            {
+                var query = from b in db.Najemcy
+                            select b;
+                foreach (var item in query)
+                {
+                    if(item.Pesel == this.Pesel)
+                    {
+                        Console.WriteLine("Taki rekord już istnieje");
+                        return;
+
+                    }
+                    
+                    
+                }
+                db.Najemcy.Add(this);
+                db.SaveChanges();
+
+
+            }
+        }
+        /// <summary>
+        /// Przykładowe zapytanie skierowane do bazy danych, wypisywane w konsoli
+        /// </summary>
+        public static void WypiszQuery()
+        {
+            using (var db = new ModelContext())
+            {
+                var query = from b in db.Najemcy
+                            orderby b.Nazwisko
+                            select b;
+                foreach (var item in query)
+                {                  
+                        Console.WriteLine(item);
+                        
+
+                }
+                
+
+
+            }
         }
     }
 }

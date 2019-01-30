@@ -25,3 +25,19 @@ C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaS
 C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
 C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (2)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML
 C:\Users\Magda\source\repos\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe.config
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.XML
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csprojResolveAssemblyReference.cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.exe
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.pdb
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\EntityFramework.dll
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\EntityFramework.xml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.Migrations.InitialCreate.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.csproj.GenerateResource.Cache
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.Migrations.AddRezerwacje.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.Migrations.DeletePESEL.resources
+C:\Users\jakub\Documents\Visual Studio 2015\Projects\Nowy folder (4)\RezerwacjaSal\RezerwacjaSal\obj\Debug\RezerwacjaSal.Migrations.AddSala.resources
